@@ -1,4 +1,4 @@
-#include <chess.h>
+#include "chess.h"
 
 // Chess Helpers
 // Implements small, useful functions that are chess specific.

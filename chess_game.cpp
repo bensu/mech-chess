@@ -1,4 +1,4 @@
-#include <chess_game.h>
+#include "chess_game.h"
 
 #define HALL_PRESCALE 10    // Filter to add lag to the sensors
 #define DISPLAY_FILTER 300  // Filter to refresh LCD screen once in a while

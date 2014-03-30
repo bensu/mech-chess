@@ -4,7 +4,7 @@
 
 // The main function is legal_squares(BoolBoard,Tuple,Board)
 
-#include <chess.h>
+#include "chess.h"
 
 // General SuperClass
 

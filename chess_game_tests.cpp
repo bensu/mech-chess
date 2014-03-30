@@ -1,4 +1,4 @@
-#include <chess_game.h>
+#include "chess_game.h"
 
 void ChessGame::test_suite_loop(int program_num) {
 // Provides several different test cases
