@@ -32,8 +32,8 @@ Color Piece::get_color(void) const {
 
 void Piece::legal_squares(BoolBoard & buffer, const Tuple square, Board & bd) { 
 	// Fills buffer with all the legal moves for square in the bd context
-	// Walk and try if move is legal
-	for(char r=0; r<8; r++) 
+	// Walk and try if move is legal and doesn't leave in check
+	for(char r=0; r<8; r++) {
 		for(char c=0; c<8; c++) {
 			bool is_legal = bd.get(square)->is_move_legal(square,new_tuple(r,c),bd,false);
 			buffer.set(r,c,is_legal && !bd.move_leaves_check(square,new_tuple(r,c)));
