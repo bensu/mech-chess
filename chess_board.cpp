@@ -19,7 +19,10 @@ Board::Board(const Board & bd) {
 }
 
 Board::Board(int test_case) {
+	// Initialize the memory space of array with empty pieces
 	Board::init_empty();
+	// Fill the board accordin to the test case.
+	// For a chess board use Board::new_board
 	switch (test_case) {
 		// En passant Test
 		case 0:
@@ -210,6 +213,7 @@ bool Board::is_attacked_by(Color color, Tuple sq) {
 }
 
 bool Board::is_in_check(Color color) {
+	// Returns true if the color's King is in check and false if it's not.
 	Tuple kings_sq = find_king(color);
 	Color opponent = toggle_color(color);
 	// Is the King attacked by the opponents?
@@ -217,9 +221,9 @@ bool Board::is_in_check(Color color) {
 }
 
 bool Board::cant_move(Color color) {
-	// Checks if the player color can move any piece without being
+	// Checks if the player 'color' can move any piece without being
 	// in check. Returns true if the player can't move.
-	// Expensive operation
+	// It is an expensive operation since it walks the whole the board
 	for (char r = 0; r < 8; ++r) {
 		for (char c = 0; c < 8; ++c) {
 			if (get(r,c)->get_color() == color) {
