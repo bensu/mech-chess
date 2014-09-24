@@ -1,7 +1,7 @@
 MechChess
 =========
 
-MechChess is an interactive chess game that tracks the game, the clock, and shows the legal moves while you play. It is implemented using an Arduino Mega 2560 an custom electronics. Documentation to build your own hardware can be found at BROKEN_LINK.
+MechChess is an interactive chess game that tracks the game, the clock, and shows the legal moves while you play. It is implemented using an Arduino Mega 2560 an custom electronics. Documentation to build your own hardware can be found in spanish in informe.pdf. If you are interested in developing hardware and need instructions in english, contact me, I'll be happy to help.
 The code in this repository can be useful if:
 
   - You are building your own chess game.
